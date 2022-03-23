@@ -6,7 +6,7 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 20:19:40 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/23 20:22:16 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/23 20:23:31 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int	main()
 	a = 45;
 	b = 13;
 	ft_div_mod(a, b, &div, &mod);
-	printf("a/b =  %d\n module a b =  %d\n", div, mod);
+	printf("a/b =  %d\n remainder of a/b =  %d\n", div, mod);
 }
 
 
