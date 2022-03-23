@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_number.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/23 18:56:39 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/23 19:10:42 by asoler           ###   ########.fr       */
+/*   Created: 2022/03/23 19:14:13 by asoler            #+#    #+#             */
+/*   Updated: 2022/03/23 19:14:22 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_putchar(char n)
 {
-	write(1, &c, 1);
+	write(1, &n, 1);
 }
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
-	char	a;
+	char	n;
 
-	a = 'a';
-	while (a <= 'z')
+	n = '0';
+	while (n <= '9')
 	{
-		ft_putchar(a);
-		a++;
+		ft_putchar(n);
+		n++;
 	}
 }
 
 int	main(void)
 {
-	ft_print_alphabet();
+	ft_print_numbers();
 }
