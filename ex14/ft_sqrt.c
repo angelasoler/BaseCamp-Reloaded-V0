@@ -6,16 +6,30 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 00:57:54 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/24 15:02:49 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/24 15:21:34 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+void	initializer(int table[], int roots[])
+{
+	int	index;
+
+	index = 0;
+	while (index < 11)
+	{
+		roots[index] = index;
+		table[index] = index * index;
+		index++;
+	}
+}
+
 int	until_100(int nb)
 {
-	int	table[11] = {0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100};
-	int	roots[11] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+	int	table[11];
+	int	roots[11];
 	int	i;
 
+	initializer(table, roots);
 	i = 0;
 	while (i < 11)
 	{
