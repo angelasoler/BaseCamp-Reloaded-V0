@@ -6,52 +6,20 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 00:57:54 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/24 15:21:34 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/24 16:11:03 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	initializer(int table[], int roots[])
-{
-	int	index;
-
-	index = 0;
-	while (index < 11)
-	{
-		roots[index] = index;
-		table[index] = index * index;
-		index++;
-	}
-}
-
-int	until_100(int nb)
-{
-	int	table[11];
-	int	roots[11];
-	int	i;
-
-	initializer(table, roots);
-	i = 0;
-	while (i < 11)
-	{
-		if (nb != table[i])
-			i++;
-		else
-			return (roots[i]);
-	}
-	return (0);
-}
-
 int	ft_sqrt(int nb)
 {
-	int	result;
+	// int	result;
 	int	odd;
 	int	index;
 
-	if (nb < 100)
-	{
-		result = until_100(nb);
-		return (result);
-	}
+	if (nb == 1)
+		return (1);
+	else if (nb == 0)
+		return(0);
 	else
 	{
 		odd = 1;
@@ -72,6 +40,6 @@ int	ft_sqrt(int nb)
 #include <stdio.h>
 int	main()
 {
-	printf("%d\n", ft_sqrt(441));
-// Return 0 if negative numbers. R
+	printf("%d\n", ft_sqrt(100000000));
+// Return 0 if negative numbers.
 }
