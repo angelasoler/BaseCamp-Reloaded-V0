@@ -6,20 +6,19 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 00:57:54 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/24 16:11:03 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/24 16:12:12 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
-	// int	result;
 	int	odd;
 	int	index;
 
 	if (nb == 1)
 		return (1);
 	else if (nb == 0)
-		return(0);
+		return (0);
 	else
 	{
 		odd = 1;

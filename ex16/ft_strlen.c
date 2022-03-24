@@ -6,7 +6,7 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 15:34:13 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/24 15:46:04 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/24 15:55:28 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ int	main()
 	printf("Original Funtion: %ld\n", strlen(str));
 	printf("Ft Funtion: %d\n", ft_strlen(str));
 }
-
