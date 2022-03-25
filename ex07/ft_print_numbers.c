@@ -1,21 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_number.c                                  :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 19:14:13 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/23 19:14:22 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/25 15:26:58 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void	ft_putchar(char n)
-{
-	write(1, &n, 1);
-}
 
 void	ft_print_numbers(void)
 {
@@ -27,9 +20,4 @@ void	ft_print_numbers(void)
 		ft_putchar(n);
 		n++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_numbers();
 }

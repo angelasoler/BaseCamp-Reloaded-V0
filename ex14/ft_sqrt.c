@@ -6,7 +6,7 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 00:57:54 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/24 16:12:12 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/25 15:29:49 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,4 @@ int	ft_sqrt(int nb)
 		else
 			return (index);
 	}
-}
-
-#include <stdio.h>
-int	main()
-{
-	printf("%d\n", ft_sqrt(100000000));
-// Return 0 if negative numbers.
 }

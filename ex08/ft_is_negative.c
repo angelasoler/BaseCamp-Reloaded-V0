@@ -6,16 +6,9 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/23 19:16:20 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/23 19:28:10 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/25 15:27:15 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 void	ft_is_negative(int n)
 {
@@ -23,9 +16,4 @@ void	ft_is_negative(int n)
 		ft_putchar('N');
 	else
 		ft_putchar('P');
-}
-
-int	main(void)
-{
-	ft_is_negative(-45);
 }
