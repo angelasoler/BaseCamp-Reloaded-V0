@@ -6,7 +6,7 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/24 17:20:33 by asoler            #+#    #+#             */
-/*   Updated: 2022/03/24 17:26:46 by asoler           ###   ########.fr       */
+/*   Updated: 2022/03/25 15:08:58 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,19 @@ void	ft_putstr(char *str)
 	{
 		ft_putchar(*str);
 		str++;
+	}
+}
+
+void	ft_putvector(int argc, char *argv[])
+{
+	int	index;
+
+	index = 1;
+	while (index < argc)
+	{
+		ft_putstr(argv[index]);
+		ft_putchar('\n');
+		index++;
 	}
 }
 
@@ -43,21 +56,28 @@ int	ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-char	**ft_sort_params(char **argv[])
-{
-	// its going to compeir one position of array
-	// with the next one increasingly returning a sorted array
-}
-
 int	main(int argc, char *argv[])
 {
-	int	i;
+	int		index;
+	int		index2;
+	char	*aux;
 
-	i = 1;
-	while (i < argc)
+	index = 1;
+	index2 = 1;
+	while (index < argc)
 	{
-		ft_putstr(argv[i]);
-		ft_putchar('\n');
-		i++;
+		while (index2 < argc - 1)
+		{
+			if (ft_strcmp(argv[index2], argv[index2 + 1]) > 0)
+			{
+				aux = argv[index2];
+				argv[index2] = argv[index2 + 1];
+				argv[index2 + 1] = aux;
+			}
+			index2++;
+		}
+		index2 = 1;
+		index++;
 	}
+	ft_putvector(argc, argv);
 }
